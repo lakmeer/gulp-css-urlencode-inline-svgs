@@ -4,7 +4,7 @@ var gutil       = require('gulp-util');
 
 const PLUGIN_NAME = 'gulp-css-urlencode-inline-svgs';
 const delimiter   = '}\n';
-const detect      = /data:image\/svg\+xml\;utf8/g;
+const detect      = /data:image\/svg\+xml/g;
 const target      = /<svg[^;]+\<\/svg\>/g;
 
 function urlencodeSvgInText (input) {
